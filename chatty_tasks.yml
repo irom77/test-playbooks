@@ -9,9 +9,11 @@
         name: "debug1"
         msg: "This is a debug message: {{ item }}"
       with_sequence: 'count={{ num_messages }}'
-    - debug: "debug2"
+    - debug: 
+        name: "debug2"
         msg: "This is a debug message: {{ item }}"
       with_sequence: 'count={{ num_messages }}'
-    - debug: "debug3"
+    - debug: 
+        name: "debug3"
         msg: "This is a debug message: {{ item }}"
       with_sequence: 'count={{ num_messages }}'
