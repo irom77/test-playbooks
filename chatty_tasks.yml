@@ -5,15 +5,15 @@
   vars:
     num_messages: 50
   tasks:
-    - debug:
-        name: "debug1"
+    - name: "debug1"
+      debug:
         msg: "This is a debug message: {{ item }}"
       with_sequence: 'count={{ num_messages }}'
-    - debug: 
-        name: "debug2"
+    - name: "debug2"
+      debug:
         msg: "This is a debug message: {{ item }}"
       with_sequence: 'count={{ num_messages }}'
-    - debug: 
-        name: "debug3"
+    - name: "debug3"
+      debug: 
         msg: "This is a debug message: {{ item }}"
       with_sequence: 'count={{ num_messages }}'
