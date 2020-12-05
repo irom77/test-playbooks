@@ -4,6 +4,6 @@
   gather_facts: false
   tasks:
     - ping:
-      delegate_to: 127.0.0.1
+      delegate_to: localhost
       vars:
          ansible_connection: ssh
